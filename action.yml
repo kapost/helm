@@ -1,0 +1,8 @@
+name: helm
+description: "This action creates a docker container with aws cli and helm v3 installed for AWS EKS"
+branding:
+  icon: 'terminal'
+  color: 'purple'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
