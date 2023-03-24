@@ -1,4 +1,4 @@
-# Helm
+# Kap-Helm
 This action creates a docker container with AWS CLI and Helm v3 available for AWS EKS deployments. The entrypoint.sh script assumes that the action is used in a repo where the helm chart structure is located in an `apps/<application>/` directory structure and that values files are named with an environment leading the `-values.yaml`. A value in the `<env>-values.yaml` file will need to use a placeholder for the deployment image with a value of `RELEASE_IMAGE`
 
 For example
@@ -65,7 +65,7 @@ jobs:
               uses: aws-actions/amazon-ecr-login@v1
             
             - name: Deploy to EKS Cluster
-              uses: kapost/helm
+              uses: kapost/kap-helm
               env:
                 ECR_REPOSITORY: kap-app
                 ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
