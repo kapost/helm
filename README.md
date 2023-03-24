@@ -4,32 +4,32 @@ This action creates a docker container with AWS CLI and Helm v3 available for AW
 For example
 ```bash
 repo
-| 
+│ 
 ├── apps
 │   ├── application1
 │   │   ├── prod-values.yaml
-|   |   ├── pre-prod-values.yaml
-|   |   ├── dev-values.yaml 
-|   |   ├── templates
-|   |   |   ├── hpa.yaml
-|   |   |   ├── deployment.yaml
-|   |   |   ├── service.yaml
+│   │   ├── pre-prod-values.yaml
+│   │   ├── dev-values.yaml 
+│   │   ├── templates
+│   │   │   ├── hpa.yaml
+│   │   │   ├── deployment.yaml
+│   │   │   ├── service.yaml
 │   ├── application2
 │   │   ├── prod-values.yaml
-|   |   ├── pre-prod-values.yaml
-|   |   ├── dev-values.yaml 
-|   |   ├── templates
-|   |   |   ├── hpa.yaml
-|   |   |   ├── deployment.yaml
-|   |   |   ├── service.yaml
+│   │   ├── pre-prod-values.yaml
+│   │   ├── dev-values.yaml 
+│   │   ├── templates
+│   │   │   ├── hpa.yaml
+│   │   │   ├── deployment.yaml
+│   │   │   ├── service.yaml
 │   ├── application3
 │   │   ├── prod-values.yaml
-|   |   ├── pre-prod-values.yaml
-|   |   ├── dev-values.yaml 
-|   |   ├── templates
-|   |   |   ├── hpa.yaml
-|   |   |   ├── deployment.yaml
-|   |   |   ├── service.yaml
+│   │   ├── pre-prod-values.yaml
+│   │   ├── dev-values.yaml 
+│   │   ├── templates
+│   │   │   ├── hpa.yaml
+│   │   │   ├── deployment.yaml
+│   │   │   ├── service.yaml
 ├── README.md
 └── .gitignore
 ```
@@ -110,7 +110,7 @@ users:
 ```
 Run the following command to populate the secret: 
 ```bash
-cat kubeconfig | base64
+cat kubeconfig │ base64
 ```
 
 Make sure that the kubeconfig does not have `AWS_PROFILE`, i.e. remove the section before base64 encoding:
