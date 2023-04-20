@@ -3,7 +3,7 @@ FROM amazon/aws-cli:latest
 ENV VERIFY_CHECKSUM=false
 
 # Install dependencies
-RUN yum update && yum install -y \
+RUN yum install -y \
     git \
     tar
 
