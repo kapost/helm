@@ -32,3 +32,4 @@ jobs:
           APPLICATION: ${{ secrets.APPLICATION }}
           KUBE_CONFIG: ${{ secrets.KUBE_CONFIG_DATA }}
           KUBE_NAMESPACE: my-namespace
+          HELM_ACTION: upgrade
